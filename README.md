@@ -11,7 +11,7 @@ This repository contains images that are used by Pterodactyl Panel to run games.
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
 
- Copyright (C) 2018 Mason Rowe <mason@masonrowe.com>
+ Copyright (C) 2018 Mason Rowe <mason@rowe.sh>
 
  Everyone is permitted to copy and distribute verbatim or modified
  copies of this license document, and changing it is allowed as long
