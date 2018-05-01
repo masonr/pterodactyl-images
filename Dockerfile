@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM        ubuntu:16.04
 
-MAINTAINER  Mason Rowe, <mason@masonrowe.com>
+MAINTAINER  Mason Rowe, <mason@rowe.sh>
 ENV         DEBIAN_FRONTEND noninteractive
 
 # Install Dependencies
