@@ -1,4 +1,4 @@
-# Docker image for Mount & Blade Warband within Pterodactyl Panel
+# Docker image for Mount & Blade Warband Servers within Pterodactyl Panel
 
 ## Supported Mods
 
