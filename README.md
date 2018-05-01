@@ -1,10 +1,8 @@
-# Custom Docker Images for Pterodactyl Panel
+# Docker image for Mount & Blade Warband [Native + NW + Mods] within Pterodactyl Panel
 
-This repository contains images that are used by Pterodactyl Panel to run games.
+## Supported Mods
 
-## Current Images
-
-TODO
+//TODO
 
 ## License
 ```
