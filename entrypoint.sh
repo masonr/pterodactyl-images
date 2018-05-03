@@ -29,10 +29,12 @@ if [[ "$INSTALLED" != "$MODULE" ]] ; then
 		cp -rf /home/container/fi2.txt /home/container/Config.txt
 	elif [[ "$MODULE" == "PW_4.5" ]] ; then # Persistent World Install
 		wget -qO- https://files.rowe.sh/wineconsole/warband/native/nat-latest.tar.gz | tar xvz --strip-components=1
-		# TODO
-	elif [[ "$MODULE" == "Mount & Gladius" ]] ; then # Mount & Gladius/March of Rome Install
+		wget -qO- https://files.rowe.sh/wineconsole/warband/native/pw-latest.tar.gz | tar xvz --strip-components=1
+		cp -rf /home/container/PW_server_cfg.txt /home/container/Config.txt
+	elif [[ "$MODULE" == "MoR_2.5" ]] ; then # Mount & Gladius/March of Rome Install
 		wget -qO- https://files.rowe.sh/wineconsole/warband/native/nat-latest.tar.gz | tar xvz --strip-components=1
-		# TODO
+		wget -qO- https://files.rowe.sh/wineconsole/warband/native/mor-latest.tar.gz | tar xvz --strip-components=1
+		cp -rf /home/container/MoRconfig.txt /home/container/Config.txt
 	elif [[ "$MODULE" == "Napoleonic Wars" ]] ; then # M&B Warband NW Install
 		wget -qO- https://files.rowe.sh/wineconsole/warband/nw/nw-latest.tar.gz | tar xvz --strip-components=1
 		cp -rf /home/container/NW_Sample_Team_Deathmatch.txt /home/container/Config.txt
@@ -53,7 +55,8 @@ if [[ "$INSTALLED" != "$MODULE" ]] ; then
 		# TODO
 	elif [[ "$MODULE" == "AZW Reloaded" ]] ; then # Anglo-Zulu War Reloaded Install
 		wget -qO- https://files.rowe.sh/wineconsole/warband/nw/nw-latest.tar.gz | tar xvz --strip-components=1
-		# TODO
+		wget -qO- https://files.rowe.sh/wineconsole/warband/nw/azw-latest.tar.gz | tar xvz --strip-components=1
+		cp -rf /home/container/ZULUconfig.txt /home/container/Config.txt	
 	elif [[ "$MODULE" == "Iron Europe" ]] ; then # Iron Europe Install
 		wget -qO- https://files.rowe.sh/wineconsole/warband/nw/nw-latest.tar.gz | tar xvz --strip-components=1
 		# TODO
