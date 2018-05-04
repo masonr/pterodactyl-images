@@ -82,8 +82,7 @@ if [[ "$MB_WB_CMD" == "link" ]] ; then
 		MB_WB_DL_LINK=${MB_WB_LINKS["$MB_WB_MODULE"]}
 
 		if [[ -z "$MB_WB_DL_LINK" ]] ; then
-			echo -e "The module you entered is not a valid module."
-			echo -e "Run './mb-warband-links.sh modules' to list all supported modules."
+			# The module entered is not a valid module.
 			exit 1
 		fi
 
