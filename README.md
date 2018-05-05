@@ -7,7 +7,7 @@ This Docker image is automatically built and can be found on the Docker Hub at:
 
 To pull the pre-built Docker image:  
 ```bash
-$docker pull masonr/pterodactyl-images:wb-warband
+$ docker pull masonr/pterodactyl-images:wb-warband
 ```
 
 ## Supported Modules
