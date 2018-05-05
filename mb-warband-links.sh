@@ -75,7 +75,7 @@ if [[ "$MB_WB_CMD" == "link" ]] ; then
 			fi
 		done
 
-		echo -e "The module you entered is not a valid module."
+		echo -e "ERROR: The module you entered is not a valid module."
 		echo -e "Run './mb-warband-links.sh modules' to list all supported modules."
 		exit 1
 	elif [[ "$MB_WB_DL_TYPE" == "mod" ]] ; then
@@ -88,7 +88,7 @@ if [[ "$MB_WB_CMD" == "link" ]] ; then
 
 		echo -e "$MB_WB_DL_LINK"
 	else
-		echo -e "Unrecognized download type. Please use either:"
+		echo -e "ERROR: Unrecognized download type. Please use either:"
 		echo -e "	'base': to get the link to the base server files necessary for the module"
 		echo -e "	'mod': to get the link to the module's server files"
 		exit 1
@@ -107,6 +107,38 @@ elif [[ "$MB_WB_CMD" == "modules" ]] ; then
 	do
 		echo -e "\t$i"
 	done
+elif [[ "$MB_WB_CMD" == "base" ]] ; then
+	if [[ -z "$MB_WB_MODULE" ]] ; then
+		echo "No Module specified. Run './mb-warband-links.sh help' for script usage."
+		exit 1
+	fi
+
+	if [[ "$MB_WB_MODULE" == "Native" || "$MB_WB_MODULE" == "Napoleonic Wars" ]] ; then
+		# No base server files are needed for the Module
+		exit 0
+	fi
+
+	for i in "${MB_WB_NATIVE_MODS[@]}"
+	do
+		if [[ "$MB_WB_MODULE" == "$i" ]] ; then
+			# Native-based module identified. Base server files are saved to MB_WB_DL_LINK env var.
+			echo -e "Native"
+			exit 0
+		fi
+	done
+
+	for i in "${MB_WB_NW_MODS[@]}"
+	do
+		if [[ "$MB_WB_MODULE" == "$i" ]] ; then
+			# Napoleonic Wars-based module identified. Base server files are saved to MB_WB_DL_LINK env var.
+			echo -e "Napoleonic Wars"
+			exit 0
+		fi
+	done
+
+	echo -e "ERROR: The module you entered is not a valid module."
+	echo -e "Run './mb-warband-links.sh modules' to list all supported modules."
+	exit 1
 elif [[ "$MB_WB_CMD" == "help" ]] ; then
 	echo -e "\nUsage: ./mb-warband-links.sh command [options]"
 	echo -e "    link [module] [type]    generates download links for mount and blade warband server files"
@@ -115,6 +147,8 @@ elif [[ "$MB_WB_CMD" == "help" ]] ; then
 	echo -e "                                null if no base files are needed for that specific module"
 	echo -e "                            'mod' to get the link for the module's server files"
 	echo -e "    modules                 prints all supported modules"
+	echo -e "    base [module]           prints the name of the base Module that the module depends on"
+	echo -e "        module              name of the warband module (ex. 'North and South First Manassas')"
 	echo -e "    help                    prints this usage summary"
 	echo -e "\nNote: if the Module name contains spaces, then it must be wrapped in quotation marks."
 	echo -e "\nExamples:"

@@ -12,7 +12,7 @@ ENV         DEBIAN_FRONTEND noninteractive
 RUN         dpkg --add-architecture i386 \
             && apt update \
             && apt upgrade -y \
-            && apt install -y wget software-properties-common apt-transport-https bsdtar \
+            && apt install -y wget software-properties-common apt-transport-https bsdtar dos2unix \
             && wget -qO - https://dl.winehq.org/wine-builds/Release.key | apt-key add - \
             && apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ \
             && apt update \

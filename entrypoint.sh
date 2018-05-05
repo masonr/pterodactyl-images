@@ -38,12 +38,16 @@ if [[ -z "$INSTALLED" ]] ; then
 
 	# Install base server files, if needed
 	if [[ -z "$MODULE_BASE_LINK" ]] ; then
-		wget -qO- $MODULE_BASE_LINK | tar xvz --strip-components=1
+		BASE_INSTALLED=`ls /home/container/Modules | grep $(./mb-warband-links.sh base "$MODULE")`
+		if [[ -z "$BASE_INSTALLED" ]] ; then
+			wget -qO- $MODULE_BASE_LINK | tar xvz --strip-components=1
+		fi
 	fi
 
 	# Install module files
 	wget -qO- $MODULE_LINK | tar xvz --strip-components=1
 	cp -rf /home/container/"$MODULE"_Sample_Config.txt /home/container/Config.txt
+	dos2unix /home/container/Config.txt
 
 	echo "Module: $MODULE has been sucessfully installed."
 	rm mb-warband-links.sh
@@ -55,8 +59,9 @@ sed -i 's/.*set_server_name.*/set_server_name '"$SERVER_NAME"'/g' /home/containe
 # Edit Server Admin Password ($ADMIN_PASSWORD)
 sed -i 's/.*set_pass_admin.*/set_pass_admin '"$ADMIN_PASS"'/g' /home/container/Config.txt
 
-# Edit Server Password
+# Edit Server Password ($SERVER_PASS)
 sed -i 's/.*set_pass .*/set_pass '"$SERVER_PASS"'/g' /home/container/Config.txt
+sed -i 's/.*set_pass$/set_pass '"$SERVER_PASS"'/g' /home/container/Config.txt
 
 # Edit Server Welcome Message ($MOTD)
 sed -i 's/.*set_welcome_message.*/set_welcome_message '"$MOTD"'/g' /home/container/Config.txt
@@ -64,7 +69,7 @@ sed -i 's/.*set_welcome_message.*/set_welcome_message '"$MOTD"'/g' /home/contain
 # Edit Player Count ($PLAYERS)
 sed -i 's/.*set_max_players.*/set_max_players '"$PLAYERS"' '"$PLAYERS"'/g' /home/container/Config.txt
 
-# Edit Server Port
+# Edit Server Port ($SERVER_PORT)
 sed -i 's/.*set_port.*/set_port '"$SERVER_PORT"'/g' /home/container/Config.txt
 
 # Replace Startup Variables

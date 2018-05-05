@@ -1,10 +1,20 @@
 # Docker image for Mount & Blade Warband Servers within Pterodactyl Panel
 
+## Automated Builds
+
+This Docker image is automatically built and can be found on the Docker Hub at:  
+	https://hub.docker.com/r/masonr/pterodactyl-images/
+
+To pull the pre-built Docker image:  
+```bash
+$docker pull masonr/pterodactyl-images:wb-warband
+```
+
 ## Supported Modules
 
 **Important Notes**: 
 1. When selecting a Module to run in your server configuration, copy the text _exactly_ as shown from the "Module Name" column. 
-2. Backup any custom files (i.e. _Config.txt_, _ban_list.txt_, _Logs_, etc.) before proceeding as this will be overwritten with the new Module's server files.
+2. If a module is currently installed and a new one is selected, all config files and logs will be placed in the "Backups" directory (files currently backed up: _Config.txt_, _Logs/*_, and _ban\_list.txt_).
 
 ### Mount & Blade: Warband - Native
 
