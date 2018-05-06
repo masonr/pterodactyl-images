@@ -15,6 +15,7 @@ $ docker pull masonr/pterodactyl-images:wb-warband
 **Important Notes**: 
 1. When selecting a Module to run in your server configuration, copy the text _exactly_ as shown from the "Module Name" column. 
 2. If a module is currently installed and a new one is selected, all config files and logs will be placed in the "Backups" directory (files currently backed up: _Config.txt_, _Logs/*_, and _ban\_list.txt_).
+3. Only the main IP of the server can be used for M&B Servers due to the server listing mechanism. Alternate/alias IPs will not work correctly as allocations.
 
 ### Mount & Blade: Warband - Native
 
