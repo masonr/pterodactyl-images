@@ -3,12 +3,17 @@
 ## Automated Builds
 
 This Docker image is automatically built and can be found on the Docker Hub at:  
-	https://hub.docker.com/r/masonr/pterodactyl-images/
+https://hub.docker.com/r/masonr/pterodactyl-images/
 
 To pull the pre-built Docker image:  
 ```bash
 $ docker pull masonr/pterodactyl-images:wb-warband
 ```
+
+## Mount & Blade: Warband Server Files
+
+All server files for the modules below have been staged and made publically available here:  
+http://files.rowe.sh/pterodactyl/mb-warband/
 
 ## Supported Modules
 
@@ -30,7 +35,7 @@ $ docker pull masonr/pterodactyl-images:wb-warband
 <sup>1 ModDB</sup>  
 <sup>2 TaleWorlds Forums</sup>  
 
-### Mount & Blade Warband - Napoleonic Wars
+### Mount & Blade: Warband - Napoleonic Wars
 
 | Module Name | Comment | Version | MDB<sup>1</sup> | TW<sup>2</sup> | FSE<sup>3</sup> |
 | --- | --- | :---: | :---: | :---: | :---: |
