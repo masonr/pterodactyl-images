@@ -37,9 +37,9 @@ if [[ -z "$INSTALLED" ]] ; then
 	fi
 
 	# Install base server files, if needed
-	if [[ -z "$MODULE_BASE_LINK" ]] ; then
+	if [[ ! -z "$MODULE_BASE_LINK" ]] ; then
 		BASE_INSTALLED=`ls /home/container/Modules | grep $(./mb-warband-links.sh base "$MODULE")`
-		if [[ -z "$BASE_INSTALLED" ]] ; then
+		if [[ ! -z "$BASE_INSTALLED" ]] ; then
 			wget -qO- $MODULE_BASE_LINK | tar xvz --strip-components=1
 		fi
 	fi
