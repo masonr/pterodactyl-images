@@ -7,7 +7,7 @@ https://hub.docker.com/r/masonr/pterodactyl-images/
 
 To pull the pre-built Docker image:  
 ```bash
-$ docker pull masonr/pterodactyl-images:wb-warband
+$ docker pull masonr/pterodactyl-images:mb-warband
 ```
 
 ## Mount & Blade: Warband Server Files
