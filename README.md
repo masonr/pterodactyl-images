@@ -12,7 +12,7 @@ $ docker pull masonr/pterodactyl-images:mb-warband
 
 ## Mount & Blade: Warband Server Files
 
-All server files for the modules below have been staged and made publically available here:  
+All server files for the modules below have been staged and made publicly available here:  
 http://files.rowe.sh/pterodactyl/mb-warband/
 
 ## Supported Modules
