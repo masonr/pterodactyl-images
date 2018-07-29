@@ -3,12 +3,12 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2018-05-07T10:23:19-04:00",
+    "exported_at": "2018-07-28T22:01:58-04:00",
     "name": "M&B Warband",
     "author": "mason@rowe.sh",
     "description": "Mount & Blade Warband server",
     "image": "masonr\/pterodactyl-images:mb-warband",
-    "startup": "wine mb_warband_dedicated.exe -r Config.txt -m {{MODULE}}",
+    "startup": "WINEDEBUG=\"fixme-all\" wine mb_warband_dedicated.exe -r Config.txt -m {{MODULE}}",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Starting mission\",\r\n    \"userInteraction\": []\r\n}",
