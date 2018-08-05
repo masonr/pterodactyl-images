@@ -1,9 +1,9 @@
 #!/bin/bash
 # Initial: 4 May 2018
-# Last Updated: 4 May 2018
+# Last Updated: 5 Aug 2018
 # Maintained by Mason Rowe <mason@rowe.sh>
 #
-# mb-warband-links.sh 
+# mb-warband-links.sh
 # 	Serves the most up to date download links for Modules for Mount and Blade: Warband game servers.
 #	Link to download the correct files will be stored in the env var: DL_LINK
 #
@@ -24,7 +24,7 @@ MB_WB_DL_TYPE=$3
 MB_WB_NATIVE_MODS=( "The Deluge" "FI2 Amber 2.0" "MoR_2.5" "PW_4.5" )
 # Supported Napoleonic Wars Mods
 MB_WB_NW_MODS=( "AZW Reloaded" "Bello Civili" "Blood and Iron Age of Imperialism" "Iron Europe" \
-	"North and South First Manassas" "PikeShotte" "Red and Blue 1936 v2.1" "War of 1812" \
+	"North and South First Manassas" "PikeShotte" "Red and Blue v3" "War of 1812" \
 	"Whigs and Tories Final" )
 
 # Build link array
@@ -41,7 +41,7 @@ MB_WB_LINKS["Blood and Iron Age of Imperialism"]="https://files.rowe.sh/pterodac
 MB_WB_LINKS["Iron Europe"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/ie-latest.tar.gz"
 MB_WB_LINKS["North and South First Manassas"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/nas-latest.tar.gz"
 MB_WB_LINKS["PikeShotte"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/ps-latest.tar.gz"
-MB_WB_LINKS["Red and Blue 1936 v2.1"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/rab-latest.tar.gz"
+MB_WB_LINKS["Red and Blue v3"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/rab-latest.tar.gz"
 MB_WB_LINKS["War of 1812"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/wo1812-latest.tar.gz"
 MB_WB_LINKS["Whigs and Tories Final"]="https://files.rowe.sh/pterodactyl/mb-warband/nw/wat-latest.tar.gz"
 
