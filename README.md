@@ -17,8 +17,8 @@ http://files.rowe.sh/pterodactyl/mb-warband/
 
 ## Supported Modules
 
-**Important Notes**: 
-1. When selecting a Module to run in your server configuration, copy the text _exactly_ as shown from the "Module Name" column. 
+**Important Notes**:
+1. When selecting a Module to run in your server configuration, copy the text _exactly_ as shown from the "Module Name" column.
 2. If a module is currently installed and a new one is selected, all config files and logs will be placed in the "Backups" directory (files currently backed up: _Config.txt_, _Logs/*_, and _ban\_list.txt_).
 3. Only the main IP of the server can be used for M&B Servers due to the server listing mechanism. Alternate/alias IPs will not work correctly as allocations.
 
@@ -46,7 +46,7 @@ http://files.rowe.sh/pterodactyl/mb-warband/
 | Iron Europe | World War I | 1.21 | [Link](http://www.moddb.com/mods/iron-europe-ww1-mod) | [Link](https://forums.taleworlds.com/index.php?board=352.0) | [Link](https://www.fsegames.eu/forum/index.php?board=127.0) |
 | North and South First Manassas | American Civil War | 1.1 | [Link](http://www.moddb.com/mods/north-south-first-manassas) | [Link](https://forums.taleworlds.com/index.php/board,309.0.html) | [Link](https://www.fsegames.eu/forum/index.php?board=34.0) |
 | PikeShotte | Pike & Shotte - English Civil War | 2.1 | [Link](http://www.moddb.com/mods/pike-shotte-english-civil-war) | | [Link](https://www.fsegames.eu/forum/index.php?board=183.0) |
-| Red and Blue 1936 v2.1 | Spanish Civil  War | 2.1 | [Link](http://www.moddb.com/mods/red-and-blue-1936) | | [Link](https://www.fsegames.eu/forum/index.php?board=136.0) |
+| Red and Blue v3 | Spanish Civil  War | 2.1 | [Link](http://www.moddb.com/mods/red-and-blue-1936) | | [Link](https://www.fsegames.eu/forum/index.php?board=136.0) |
 | War of 1812 | | Final | [Link](http://www.moddb.com/mods/the-war-of-1812) | | [Link](https://www.fsegames.eu/forum/index.php?board=139.0) |
 | Whigs and Tories Final | American Revolution | Final | [Link](http://www.moddb.com/mods/whigs-and-tories) | | [Link](https://www.fsegames.eu/forum/index.php?board=150.0) |
 
