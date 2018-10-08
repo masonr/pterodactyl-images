@@ -29,7 +29,7 @@ http://files.rowe.sh/pterodactyl/mb-warband/
 | Native | [Main Site](https://www.taleworlds.com/en/Games/Warband) | 1.173 | | [Link](https://www.taleworlds.com/en/Games/Warband) |
 | The Deluge | | 1.010 | [Link](http://www.moddb.com/mods/the-deluge) | [Link](https://forums.taleworlds.com/index.php?board=274.0) |
 | FI2 Amber 2.0 | Full Invasion 2 | 2.0 | [Link](http://www.moddb.com/mods/full-invasion-2) | [Link](https://forums.taleworlds.com/index.php/board,325.0.html) |
-| MoR_2.5 | March of Rome (changing to "Mount & Gladius") | 2.5 | [Link](http://www.moddb.com/mods/march-of-rome) | [M&G](https://forums.taleworlds.com/index.php/board,268.0.html) - [MoR](https://forums.taleworlds.com/index.php/board,358.0.html) |
+| Mount and Gladius V1.0 | Mount & Gladius (formerly March of Rome) | 1.0 | [Link](https://www.moddb.com/mods/mount-and-gladius) | [M&G](https://forums.taleworlds.com/index.php/board,268.0.html) |
 | PW_4.5 | Persistent World | 4.5.1 | [Link](http://www.moddb.com/mods/persistent-world-mod) | [Link](https://forums.taleworlds.com/index.php/board,184.0.html) |
 
 <sup>1 ModDB</sup>  
