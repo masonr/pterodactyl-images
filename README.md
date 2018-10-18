@@ -1,10 +1,4 @@
-# Custom Docker Images for Pterodactyl Panel
-
-This repository contains images that are used by Pterodactyl Panel to run games.
-
-## Current Images
-
-[Mount & Blade Warband](https://github.com/masonr/pterodactyl-images/tree/mb-warband) (including Native, NW, and other 3rd-party Mods)
+# Docker image for Holdfast: Nations at War servers within Pterodactyl Panel 
 
 ## License
 ```
