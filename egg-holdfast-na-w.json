@@ -3,12 +3,12 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2018-10-18T14:06:56-04:00",
+    "exported_at": "2018-10-18T14:16:50-04:00",
     "name": "Holdfast NaW",
     "author": "mason@rowe.sh",
     "description": "Holdfast: Nations at War",
     "image": "masonr\/pterodactyl-images:holdfast",
-    "startup": "WINEDEBUG=\"fixme-all\" DISPLAY=:0 wine \"\/home\/container\/Holdfast NaW.exe\" -startserver -batchmode -screen-width 640 -screen-height 480 -screen-quality Fastest -framerate 60 -servercarbonplayers 0 -serverConfigFilePath \/home\/container\/serverconfig.txt -logFile \/home\/container\/logs_output\/outputlog_server.txt -logArchivesDirectory \/home\/container\/logs_archive -s {{EXTERNAL_IP}} -p {{SERVER_PORT}} -l \"94.130.66.231\" -o 7101",
+    "startup": "WINEDEBUG=\"fixme-all\" DISPLAY=:0 wine \"\/home\/container\/Holdfast NaW.exe\" -startserver -batchmode -screen-width 640 -screen-height 480 -screen-quality Fastest -framerate 60 -servercarbonplayers 0 -serverConfigFilePath \/home\/container\/serverconfig.txt -logFile \/home\/container\/logs_output\/outputlog_server.txt -logArchivesDirectory \/home\/container\/logs_archive -s {{SERVER_IP}} -p {{SERVER_PORT}} -l \"94.130.66.231\" -o 7101",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Loading player data\",\r\n    \"userInteraction\": []\r\n}",
