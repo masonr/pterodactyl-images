@@ -3,7 +3,7 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2018-10-18T13:38:42-04:00",
+    "exported_at": "2018-10-18T14:06:56-04:00",
     "name": "Holdfast NaW",
     "author": "mason@rowe.sh",
     "description": "Holdfast: Nations at War",
@@ -75,7 +75,7 @@
             "default_value": "589290",
             "user_viewable": 1,
             "user_editable": 0,
-            "rules": "required|alpha_dash|between:1,100"
+            "rules": "required|numeric"
         },
         {
             "name": "Steam User",
