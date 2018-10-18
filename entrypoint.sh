@@ -37,10 +37,10 @@ sed -i 's/.*server_password.*/server_password '"$SERVER_PASS"'/g' /home/containe
 sed -i 's/.*server_port.*/server_port '"$SERVER_PORT"'/g' /home/container/serverconfig.txt
 
 # Edit Server Communications Port ($SERVER_COMM_PORT)
-sed -i 's/.*server_communications_port.*/server_communications_port '"$SERVER_COMM_PORT"'/g' /home/container/serverconfig.txt
+sed -i 's/.*steam_communications_port.*/steam_communications_port '"$SERVER_COMM_PORT"'/g' /home/container/serverconfig.txt
 
 # Edit Server Query Port ($SERVER_QUERY_PORT)
-sed -i 's/.*server_query_port.*/server_query_port '"$SERVER_QUERY_PORT"'/g' /home/container/serverconfig.txt
+sed -i 's/.*steam_query_port.*/steam_query_port '"$SERVER_QUERY_PORT"'/g' /home/container/serverconfig.txt
 
 # Replace Startup Variables
 MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
