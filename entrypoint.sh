@@ -4,6 +4,9 @@ cd /home/container
 # Make internal Docker IP address available to processes.
 export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
 
+# Get external IP address
+export EXTERNAL_IP=`hostname -i`
+
 # Update Source Server
 if [ ! -z ${SRCDS_APPID} ]; then
     ./steamcmd/steamcmd.sh +@sSteamCmdForcePlatformType windows +login ${STEAM_USER} ${STEAM_PASS} +force_install_dir /home/container +app_update ${SRCDS_APPID} +quit
@@ -14,6 +17,9 @@ Xvfb :0 -screen 0 1024x768x16 &
 
 # Edit Server Name ($SERVER_NAME)
 sed -i 's/.*server_name.*/server_name '"$SERVER_NAME"'/g' /home/container/serverconfig.txt
+
+# Edit Player Count ($PLAYERS)
+sed -i 's/.*maximum_players.*/maximum_players '"$PLAYERS"'/g' /home/container/serverconfig.txt
 
 # Edit Server Welcome Message ($MOTD)
 sed -i 's/.*server_welcome_message.*/server_welcome_message '"$MOTD"'/g' /home/container/serverconfig.txt
