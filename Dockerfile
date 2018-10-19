@@ -23,7 +23,7 @@ RUN         dpkg --add-architecture i386 \
             && mkdir -p /tmp/.X11-unix \
             && chmod 1777 /tmp/.X11-unix \
             && chown root:root /tmp/.X11-unix \
-            && Xvfb :0 -screen 0 1024x768x16 & \
+            && nohup bash -c "Xvfb :0 -screen 0 1024x768x16 &" \
             && useradd -m -d /home/container container \
             && cd /home/container
 
