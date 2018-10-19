@@ -3,7 +3,7 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2018-10-18T16:03:15-04:00",
+    "exported_at": "2018-10-19T16:15:02-04:00",
     "name": "Holdfast NaW",
     "author": "mason@rowe.sh",
     "description": "Holdfast: Nations at War",
@@ -88,12 +88,12 @@
         },
         {
             "name": "Steam Password",
-            "description": "Password for Steam User's Account",
+            "description": "Password for Steam User's Account. If left blank, console will prompt for password on server (re)start.",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": 1,
             "user_editable": 1,
-            "rules": "required|string|max:50"
+            "rules": "nullable|string|max:50"
         },
         {
             "name": "Server Communications Port",
