@@ -15,10 +15,6 @@ fi
 # Spawn a virtual frame buffer
 Xvfb :0 -screen 0 1024x768x16 -ac &
 
-# Initialize wine
-wineboot
-winetricks sound=disabled
-
 # Edit Server Name ($SERVER_NAME)
 sed -i 's/.*server_name.*/server_name '"$SERVER_NAME"'/g' /home/container/serverconfig.txt
 

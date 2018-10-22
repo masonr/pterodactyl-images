@@ -22,6 +22,7 @@ RUN         dpkg --add-architecture i386 \
             && mkdir -p /tmp/.X11-unix \
             && chmod 1777 /tmp/.X11-unix \
             && chown root:root /tmp/.X11-unix \
+            && winetricks sound=disabled \
             && useradd -m -d /home/container container \
             && cd /home/container
 
