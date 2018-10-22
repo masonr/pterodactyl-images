@@ -16,7 +16,7 @@ RUN         dpkg --add-architecture i386 \
             && wget -qO - https://dl.winehq.org/wine-builds/Release.key | apt-key add - \
             && apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ \
             && apt update \
-            && apt install -y --install-recommends winehq-devel \
+            && apt install -y --install-recommends winehq-stable \
             && apt install -y winetricks \
             && apt clean \
             && mkdir -p /tmp/.X11-unix \
