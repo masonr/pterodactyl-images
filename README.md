@@ -1,4 +1,31 @@
-# Docker image for Holdfast: Nations at War servers within Pterodactyl Panel 
+# Docker image for Holdfast: Nations At War servers within Pterodactyl Panel
+
+## Automated Builds
+
+This Docker image is automatically built and can be found on the Docker Hub at:  
+https://hub.docker.com/r/masonr/pterodactyl-images/
+
+To pull the pre-built Docker image:  
+```bash
+$ docker pull masonr/pterodactyl-images:holdfast
+```
+
+## Important Notes
+
+* You must own Holdfast: Nations At War on Steam in order to download the server files.
+* Adding the Steam password is optional, but Steam username is necessary. If password is left blank, you will need to input your password and 2FA code (if enabled) on server startup.
+* The server will fail to start on the initial startup, but will run fine each subsequent startup/restart. Appears to be caused by an issue with wine and/or Xvfb.
+* Requires at least 12 GB of disk per instance.
+
+## Required Server Ports
+
+Holdfast requires three ports:
+
+| Port    | default     |
+|---------| ----------- |
+| Game    | 20100-20300 |
+| Comm    | 8700-8900   |
+| Query   | 27000-29000 |
 
 ## License
 ```
