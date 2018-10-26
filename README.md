@@ -4,6 +4,7 @@ This repository contains images that are used by Pterodactyl Panel to run games.
 
 ## Current Images
 
+[Holdfast Nations At War](https://github.com/masonr/pterodactyl-images/tree/holdfast)
 [Mount & Blade Warband](https://github.com/masonr/pterodactyl-images/tree/mb-warband) (including Native, NW, and other 3rd-party Mods)
 
 ## License
