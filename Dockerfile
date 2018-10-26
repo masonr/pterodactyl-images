@@ -1,6 +1,6 @@
 # ----------------------------------
 # Holdfast: Nations at War Dockerfile
-# Environment: Ubuntu:16.04 + Wine + Xvfb
+# Environment: Ubuntu:18.04 + Wine + Xvfb
 # Minimum Panel Version: 0.7.9
 # ----------------------------------
 FROM        ubuntu:18.04
