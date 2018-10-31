@@ -26,10 +26,10 @@ http://files.rowe.sh/pterodactyl/mb-warband/
 
 | Module Name | Comment | Version | MDB<sup>1</sup> | TW<sup>2</sup> |
 | --- | --- | :---: | :---: | :---: |
-| Native | [Main Site](https://www.taleworlds.com/en/Games/Warband) | 1.173 | | [Link](https://www.taleworlds.com/en/Games/Warband) |
+| Native | [Main Site](https://www.taleworlds.com/en/Games/Warband) | 1.174 | | [Link](https://www.taleworlds.com/en/Games/Warband) |
 | The Deluge | | 1.010 | [Link](http://www.moddb.com/mods/the-deluge) | [Link](https://forums.taleworlds.com/index.php?board=274.0) |
 | FI2 Amber 2.0 | Full Invasion 2 | 2.0 | [Link](http://www.moddb.com/mods/full-invasion-2) | [Link](https://forums.taleworlds.com/index.php/board,325.0.html) |
-| Mount and Gladius V1.0 | Mount & Gladius (formerly March of Rome) | 1.0 | [Link](https://www.moddb.com/mods/mount-and-gladius) | [M&G](https://forums.taleworlds.com/index.php/board,268.0.html) |
+| Mount and Gladius V1.0 | Mount & Gladius (formerly March of Rome) | 1.0 | [Link](https://www.moddb.com/mods/mount-and-gladius) | [Link](https://forums.taleworlds.com/index.php/board,268.0.html) |
 | PW_4.5 | Persistent World | 4.5.1 | [Link](http://www.moddb.com/mods/persistent-world-mod) | [Link](https://forums.taleworlds.com/index.php/board,184.0.html) |
 
 <sup>1 ModDB</sup>  
@@ -39,7 +39,7 @@ http://files.rowe.sh/pterodactyl/mb-warband/
 
 | Module Name | Comment | Version | MDB<sup>1</sup> | TW<sup>2</sup> | FSE<sup>3</sup> |
 | --- | --- | :---: | :---: | :---: | :---: |
-| Napoleonic Wars | [Main Site](https://www.taleworlds.com/en/Games/NapoleonicWars) | 1.2 | [Link](http://www.moddb.com/games/mountblade-warband-napoleonic-wars) | [Link](https://forums.taleworlds.com/index.php/board,280.0.html) | |
+| Napoleonic Wars | [Main Site](https://www.taleworlds.com/en/Games/NapoleonicWars) | 1.21 | [Link](http://www.moddb.com/games/mountblade-warband-napoleonic-wars) | [Link](https://forums.taleworlds.com/index.php/board,280.0.html) | |
 | AZW Reloaded | Anglo-Zulu/Sudan War | 1.0 | [Link](http://www.moddb.com/mods/azw-reloaded) | | [Link](https://www.fsegames.eu/forum/index.php?board=95.0) |
 | Bello Civili | Roman Civil War | 2 | [Link](http://www.moddb.com/mods/bello-civili-the-roman-civil-war) | | [Link](https://www.fsegames.eu/forum/index.php?board=118.0) |
 | Blood and Iron Age of Imperialism | | 3.0 | [Link](http://www.moddb.com/mods/blood-and-iron) | | [Link](https://www.fsegames.eu/forum/index.php?board=111.0) |
