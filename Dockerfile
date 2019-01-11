@@ -9,26 +9,18 @@ MAINTAINER  Mason Rowe, <mason@rowe.sh>
 ENV         DEBIAN_FRONTEND noninteractive
 
 # Install Dependencies
-RUN         dpkg --add-architecture i386 \
-            && apt update \
+RUN         apt update \
             && apt upgrade -y \
-            && apt install -y wget software-properties-common apt-transport-https bsdtar dos2unix xvfb \
-            && wget -qO - https://dl.winehq.org/wine-builds/Release.key | apt-key add - \
-            && apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ \
-            && apt update \
-            && apt install -y --install-recommends winehq-stable \
-            && apt install -y winetricks \
+            && apt install -y iproute2 xvfb lib32gcc1 libntlm0 wine64 winetricks --install-recommends \
             && apt clean \
-            && mkdir -p /tmp/.X11-unix \
-            && chmod 1777 /tmp/.X11-unix \
-            && chown root:root /tmp/.X11-unix \
-            && winetricks sound=disabled \
             && useradd -m -d /home/container container \
             && cd /home/container
 
 USER        container
 ENV         HOME /home/container
+ENV         WINEARCH win64
+ENV         WINEPREVIX /home/container/.wine64
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
-CMD ["/bin/bash", "/entrypoint.sh"]
+CMD         ["/bin/bash", "/entrypoint.sh"]
