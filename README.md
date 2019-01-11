@@ -15,17 +15,17 @@ $ docker pull masonr/pterodactyl-images:holdfast
 * You must own Holdfast: Nations At War on Steam in order to download the server files.
 * Adding the Steam password is optional, but Steam username is necessary. If password is left blank, you will need to input your password and 2FA code (if enabled) on server startup.
 * The server will fail to start on the initial startup, but will run fine each subsequent startup/restart. Appears to be caused by an issue with wine and/or Xvfb.
-* Requires at least 12 GB of disk per instance.
+* Requires at least 16 GB of disk per instance.
 
 ## Required Server Ports
 
 Holdfast requires three ports:
 
-| Port    | default     |
-|---------| ----------- |
-| Game    | 20100-20300 |
-| Comm    | 8700-8900   |
-| Query   | 27000-29000 |
+| Port    | default | (acceptable range) |
+|---------| ------- | ------------------ |
+| Game    | 20100   | 20100-20300        |
+| Comm    | 8700    | 8700-8900          |
+| Query   | 27000   | 27000-29000        |
 
 ## License
 ```
