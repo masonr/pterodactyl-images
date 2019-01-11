@@ -11,7 +11,7 @@ ENV         DEBIAN_FRONTEND noninteractive
 RUN         apt update \
             && apt upgrade -y \
             && apt install -y iproute2 ca-certificates xvfb lib32gcc1 libntlm0 winbind wine64 winetricks --install-recommends \
-            && apt clean \
+            && apt clean
 
 USER        container
 ENV         USER=container HOME=/home/container WINEARCH=win64 WINEPREFIX=/home/container/.wine64
