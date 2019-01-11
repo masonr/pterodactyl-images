@@ -19,7 +19,7 @@ RUN         apt update \
 USER        container
 ENV         HOME /home/container
 ENV         WINEARCH win64
-ENV         WINEPREVIX /home/container/.wine64
+ENV         WINEPREFIX /home/container/.wine64
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
