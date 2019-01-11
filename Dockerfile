@@ -11,7 +11,7 @@ ENV         DEBIAN_FRONTEND noninteractive
 # Install Dependencies
 RUN         apt update \
             && apt upgrade -y \
-            && apt install -y iproute2 xvfb lib32gcc1 libntlm0 winbind wine64 --install-recommends \
+            && apt install -y iproute2 ca-certificates xvfb lib32gcc1 libntlm0 winbind wine64 --install-recommends \
             && apt clean \
             && useradd -m -d /home/container container \
             && cd /home/container
