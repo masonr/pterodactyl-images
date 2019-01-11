@@ -9,6 +9,10 @@ if [ ! -z ${SRCDS_APPID} ]; then
     ./steamcmd/steamcmd.sh +@sSteamCmdForcePlatformType windows +login ${STEAM_USER} ${STEAM_PASS} +force_install_dir /home/container +app_update ${SRCDS_APPID} +quit
 fi
 
+# Set up wine environment
+wineboot
+winetricks sound=disabled
+
 # Spawn a virtual frame buffer
 Xvfb :0 -screen 0 1024x768x16 -ac &
 
