@@ -44,7 +44,7 @@ http://files.rowe.sh/pterodactyl/mb-warband/
 | Bello Civili | Roman Civil War | 2 | [Link](http://www.moddb.com/mods/bello-civili-the-roman-civil-war) | | [Link](https://www.fsegames.eu/forum/index.php?board=118.0) |
 | Blood and Iron Age of Imperialism | | 3.0 | [Link](http://www.moddb.com/mods/blood-and-iron) | | [Link](https://www.fsegames.eu/forum/index.php?board=111.0) |
 | Iron Europe | World War I | 1.21 | [Link](http://www.moddb.com/mods/iron-europe-ww1-mod) | [Link](https://forums.taleworlds.com/index.php?board=352.0) | [Link](https://www.fsegames.eu/forum/index.php?board=127.0) |
-| North and South First Manassas | American Civil War | 1.1 | [Link](http://www.moddb.com/mods/north-south-first-manassas) | [Link](https://forums.taleworlds.com/index.php/board,309.0.html) | [Link](https://www.fsegames.eu/forum/index.php?board=34.0) |
+| North and South First Manassas | American Civil War | 1.2 | [Link](http://www.moddb.com/mods/north-south-first-manassas) | [Link](https://forums.taleworlds.com/index.php/board,309.0.html) | [Link](https://www.fsegames.eu/forum/index.php?board=34.0) |
 | PikeShotte | Pike & Shotte - English Civil War | 2.1 | [Link](http://www.moddb.com/mods/pike-shotte-english-civil-war) | | [Link](https://www.fsegames.eu/forum/index.php?board=183.0) |
 | Red and Blue v3 | Spanish Civil  War | 2.1 | [Link](http://www.moddb.com/mods/red-and-blue-1936) | | [Link](https://www.fsegames.eu/forum/index.php?board=136.0) |
 | War of 1812 | | Final | [Link](http://www.moddb.com/mods/the-war-of-1812) | | [Link](https://www.fsegames.eu/forum/index.php?board=139.0) |
