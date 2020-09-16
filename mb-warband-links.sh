@@ -1,6 +1,6 @@
 #!/bin/bash
 # Initial: 4 May 2018
-# Last Updated: 5 Aug 2018
+# Last Updated: 15 Sep 2020
 # Maintained by Mason Rowe <mason@rowe.sh>
 #
 # mb-warband-links.sh
@@ -21,7 +21,7 @@ MB_WB_MODULE=$2
 MB_WB_DL_TYPE=$3
 
 # Supported Native Modules
-MB_WB_NATIVE_MODS=( "The Deluge" "FI2 Amber 2.0" "Mount and Gladius V1.0" "PW_4.5" )
+MB_WB_NATIVE_MODS=( "The Deluge" "FI2 Amber 2.0" "Full Invasion Osiris" "Mount and Gladius V1.0" "PW_4.5" )
 # Supported Napoleonic Wars Mods
 MB_WB_NW_MODS=( "AZW Reloaded" "Bello Civili" "Blood and Iron Age of Imperialism" "Iron Europe" \
 	"North and South First Manassas" "PikeShotte" "Red and Blue v3" "War of 1812" \
@@ -31,6 +31,7 @@ MB_WB_NW_MODS=( "AZW Reloaded" "Bello Civili" "Blood and Iron Age of Imperialism
 declare -A MB_WB_LINKS
 MB_WB_LINKS["Native"]="https://files.rowe.sh/pterodactyl/mb-warband/native/nat-latest.tar.gz"
 MB_WB_LINKS["The Deluge"]="https://files.rowe.sh/pterodactyl/mb-warband/native/td-latest.tar.gz"
+MB_WB_LINKS["Full Invasion Osiris"]="https://files.rowe.sh/pterodactyl/mb-warband/native/fio-latest.tar.gz"
 MB_WB_LINKS["FI2 Amber 2.0"]="https://files.rowe.sh/pterodactyl/mb-warband/native/fi2-latest.tar.gz"
 MB_WB_LINKS["Mount and Gladius V1.0"]="https://files.rowe.sh/pterodactyl/mb-warband/native/mg-latest.tar.gz"
 MB_WB_LINKS["PW_4.5"]="https://files.rowe.sh/pterodactyl/mb-warband/native/pw-latest.tar.gz"
